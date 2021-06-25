@@ -1,4 +1,28 @@
 # This file should contain everything to configure the workflow on a global scale.
 # In case of sample based data, it should be complemented by a samples.tsv file that contains
 # one row per sample. It can be parsed easily via pandas.
-samples: "config/samples.tsv"
+samples: config/samples.csv
+
+ref:
+    index: resources/
+    gtf: resources/.gtf
+    tx2gene: resources/transcripts_to_genes.txt
+
+
+params:
+    trim:
+        - "--quality 20"
+        - "--phred33"
+        - "--fastqc"
+        - "--fastqc_args \"--threads 6\""
+        - "--trim-n"
+        - "--trim1"
+        - "--paired"
+
+kallisto:
+    quant:
+        extra:
+            - "--fr-stranded"
+            - "--bias"
+            - "--pseudobam"
+            - "--genomebam"
