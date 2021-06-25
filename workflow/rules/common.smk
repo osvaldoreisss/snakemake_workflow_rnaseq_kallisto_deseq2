@@ -16,6 +16,9 @@ samples = pd.read_csv(config["samples"], sep=",").set_index(["sample","run"], dr
 #validate(samples, schema="../schemas/samples.schema.yaml")
 
 threads = config['threads']
+
+samples_file = config['samples']
+
 onsuccess:
     print("Workflow finished, no error")
 
