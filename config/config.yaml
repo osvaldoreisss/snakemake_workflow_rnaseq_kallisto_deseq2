@@ -8,6 +8,7 @@ ref:
     gtf: resources/.gtf
     tx2gene: resources/transcripts_to_genes.txt
 
+threads: 2
 
 params:
     trim:
