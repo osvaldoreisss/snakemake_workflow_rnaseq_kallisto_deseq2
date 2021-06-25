@@ -7,10 +7,11 @@ report: "report/workflow.rst"
 # Allow users to fix the underlying OS via singularity.
 singularity: "docker://continuumio/miniconda3"
 
-include: "rules/common.smk"
-
 rule all:
     input:
-        expand("results/concatenated/{sample}.{paired}.fq.gz", sample=samples['sample'], paired=['R1','R2'])
+        "results/diffexpr/tabela.DE.kallisto.txt"
 
+include: "rules/common.smk"
 include: "rules/quality_control.smk"
+include: "rules/quant_expression.smk"
+include: "rules/differential_expression.smk"
