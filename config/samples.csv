@@ -1,0 +1,11 @@
+sample,run,event,genotype,treatment,fq1,fq2
+AS-L2_AA_2,1,L2,AA,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/1_S1_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/1_S1_L005_R2_001.fastq.gz
+AS-L2_AA_3,1,L2,AA,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/3_S3_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/3_S3_L005_R2_001.fastq.gz
+AS-L2_AA_4,1,L2,AA,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/5_S5_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/5_S5_L005_R2_001.fastq.gz
+AS-L2_AA_5,1,L2,AA,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/7_S7_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/7_S7_L005_R2_001.fastq.gz
+AS-L2_AA_6,1,L2,AA,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/9_S9_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/9_S9_L005_R2_001.fastq.gz
+AS-L2_aa_2,1,L2,aa,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/2_S2_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/2_S2_L005_R2_001.fastq.gz
+AS-L2_aa_3,1,L2,aa,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/4_S4_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/4_S4_L005_R2_001.fastq.gz
+AS-L2_aa_4,1,L2,aa,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/6_S6_L005_R2_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/6_S6_L005_R2_001.fastq.gz
+AS-L2_aa_5,1,L2,aa,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/8_S8_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/8_S8_L005_R2_001.fastq.gz
+AS-L2_aa_6,1,L2,aa,AS,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/10_S10_L005_R1_001.fastq.gz,www.lactad.unicamp.br/DATA/HISEQ/PauloArruda/210226/10_S10_L005_R2_001.fastq.gz
