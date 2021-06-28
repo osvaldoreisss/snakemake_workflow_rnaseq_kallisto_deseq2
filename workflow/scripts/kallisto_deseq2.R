@@ -10,7 +10,7 @@ library("tximport")
 print(snakemake@output[[1]])
 
 #Carrega os nomes dos arquivos de expressão de cada biblioteca
-tx2gene <- read.csv(snakemake@params[["transcripts_to_genes"]], header = FALSE, sep="\t")
+tx2gene <- read.csv(snakemake@input[["tx2gene"]], header = FALSE, sep="\t")
 head(tx2gene)
 print("\n\n")
 head(snakemake@params[["samples_file"]])

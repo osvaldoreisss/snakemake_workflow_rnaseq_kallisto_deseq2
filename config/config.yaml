@@ -4,9 +4,8 @@
 samples: config/samples.csv
 
 ref:
-    index: resources/
-    gtf: resources/.gtf
-    tx2gene: resources/transcripts_to_genes.txt
+    gtf: http://ftp.ebi.ac.uk/ensemblgenomes/pub/release-51/plants/gtf/hordeum_vulgare_goldenpromise/Hordeum_vulgare_goldenpromise.GPv1.51.gtf.gz
+    cdna: http://ftp.ebi.ac.uk/ensemblgenomes/pub/release-51/plants/fasta/hordeum_vulgare_goldenpromise/cdna/Hordeum_vulgare_goldenpromise.GPv1.cdna.all.fa.gz
 
 threads: 2
 

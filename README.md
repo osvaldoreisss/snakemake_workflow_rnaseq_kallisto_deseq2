@@ -3,8 +3,8 @@
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.7.0-brightgreen.svg)](https://snakemake.bitbucket.io)
 [![Build Status](https://travis-ci.org/snakemake-workflows/snakemake_workflow_rnaseq_kallisto_deseq2.svg?branch=master)](https://travis-ci.org/snakemake-workflows/snakemake_workflow_rnaseq_kallisto_deseq2)
 
-This is the template for a new Snakemake workflow. Replace this text with a comprehensive description covering the purpose and domain.
-Insert your code into the respective folders, i.e. `scripts`, `rules`, and `envs`. Define the entry point of the workflow in the `Snakefile` and the main configuration in the `config.yaml` file.
+This workflow is aimed to run rnaseq analysis with where files are remote HTTP.
+The reference genome for Hordeum vulgare GoldenPromise can be found here: https://plants.ensembl.org/info/data/ftp/index.html
 
 ## Authors
 
@@ -16,12 +16,11 @@ If you use this workflow in a paper, don't forget to give credits to the authors
 
 ### Step 1: Obtain a copy of this workflow
 
-1. Create a new github repository using this workflow [as a template](https://help.github.com/en/articles/creating-a-repository-from-a-template).
-2. [Clone](https://help.github.com/en/articles/cloning-a-repository) the newly created repository to your local system, into the place where you want to perform the data analysis.
+[Clone](https://help.github.com/en/articles/cloning-a-repository) this repository to your local system, into the place where you want to perform the data analysis.
 
 ### Step 2: Configure workflow
 
-Configure the workflow according to your needs via editing the files in the `config/` folder. Adjust `config.yaml` to configure the workflow execution, and `samples.tsv` to specify your sample setup.
+Configure the workflow according to your needs via editing the files in the `config/` folder. Adjust `config.yaml` to configure the workflow execution, and `samples.csv` to specify your sample setup.
 
 ### Step 3: Install Snakemake
 
