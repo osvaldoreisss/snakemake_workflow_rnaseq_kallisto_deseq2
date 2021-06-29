@@ -1,6 +1,23 @@
-rule trim_galore:
+rule get_seq:
     input: 
         unpack(get_fastq)
+    output: 
+        fq1="results/fastq/{sample}.{run}.R1.fq.gz",
+        fq2="results/fastq/{sample}.{run}.R2.fq.gz"
+    threads: threads
+    log: 
+        "results/logs/get_seq/{sample}.{run}.log"
+    shell:
+        """
+        gunzip < {input.fq1} > {output.fq1}
+        gunzip < {input.fq2} > {output.fq2}
+        """
+
+
+rule trim_galore:
+    input: 
+        "results/fastq/{sample}.{run}.R1.fq.gz",
+        "results/fastq/{sample}.{run}.R2.fq.gz"
     output: 
         directory("results/quality_analysis/{sample}.{run}")
     conda:
@@ -11,7 +28,9 @@ rule trim_galore:
     log: 
         "results/logs/trim_galore/{sample}-{run}.log"
     shell:
-        "trim_galore {params.trim} --cores {threads} --output_dir {output} {input} 2> {log}"
+        """
+        trim_galore {params.trim} --cores {threads} --output_dir {output} {input} 2> {log}
+        """
 
 rule concatenate:
     input: 
