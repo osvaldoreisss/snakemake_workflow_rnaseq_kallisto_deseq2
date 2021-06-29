@@ -4,7 +4,6 @@ rule get_seq:
     output: 
         fq1="results/fastq/{sample}.{run}.R1.fq.gz",
         fq2="results/fastq/{sample}.{run}.R2.fq.gz"
-    threads: threads
     log: 
         "results/logs/get_seq/{sample}.{run}.log"
     shell:
