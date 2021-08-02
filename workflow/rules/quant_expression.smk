@@ -8,14 +8,18 @@ rule create_kallisto_index:
         "../envs/quantification.yaml"
     params:    
         gtf=config['ref']['gtf'],
-        cdna=config['ref']['cdna']
+        cdna=config['ref']['cdna'],
+        cds_control=config['ref']['cds_control']
     shell:
         """
         wget {params.cdna} -O {output.cdna}
+        gunzip {output.cdna}
+        cat {params.cds_control} >> resources/transcripts.fa
+        gzip resources/transcripts.fa
         wget {params.gtf} -O {output.gtf}
         kallisto index -i {output.index} {output.cdna}
         zcat {output.gtf} | \
-        awk '{{if($3=="transcript"){{print $10"\\t"$12}}}}' | \
+        awk '{{if($3=="transcript"){{print $12"\\t"$10  }}}}' | \
         sed 's/;//g' | sed 's/\\"//g' > {output.tx2gene}
         """
 

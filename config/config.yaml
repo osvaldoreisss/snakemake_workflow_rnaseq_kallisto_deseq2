@@ -6,6 +6,7 @@ samples: config/samples.csv
 ref:
     gtf: http://ftp.ebi.ac.uk/ensemblgenomes/pub/release-51/plants/gtf/hordeum_vulgare_goldenpromise/Hordeum_vulgare_goldenpromise.GPv1.51.gtf.gz
     cdna: http://ftp.ebi.ac.uk/ensemblgenomes/pub/release-51/plants/fasta/hordeum_vulgare_goldenpromise/cdna/Hordeum_vulgare_goldenpromise.GPv1.cdna.all.fa.gz
+    cds_control: resources/hygbr_UCP1.fa
 
 threads: 2
 
@@ -22,7 +23,7 @@ params:
 kallisto:
     quant:
         extra:
-            - "--fr-stranded"
+            - "--rf-stranded"
             - "--bias"
             - "--pseudobam"
             - "--genomebam"
